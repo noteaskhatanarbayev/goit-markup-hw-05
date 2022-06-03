@@ -665,6 +665,45 @@ img {
   color: inherit;
   display: block;
 }
+.portfolio-project-link:hover .portfolio-project-overlay-container {
+  opacity: 1;
+}
+
+.portfolio-project-img-container {
+  position: relative;
+  max-width: 370px;
+  max-height: 294px;
+  overflow: hidden;
+}
+
+.portfolio-project-overlay-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, 100%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-project-link:hover .portfolio-project-overlay-container {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.portfolio-project-overlay-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
+
+  color: #ffffff;
+}
 .portfolio-project-link:hover,
 .portfolio-project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
