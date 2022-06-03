@@ -735,6 +735,8 @@ img {
   padding-top: 20px;
 }
 /* ==========/PORTFOLIO=============== */
+
+/* ===========MODAL WINDOW============== */
 .backdrop {
   position: fixed;
   top: 0;
@@ -775,3 +777,4 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
+/* ===========/MODAL WINDOW============== */
