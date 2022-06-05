@@ -203,6 +203,8 @@ img {
   align-items: center;
   margin-right: 10px;
   fill: #757575;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-mail-icon:hover,
 .contact-mail-icon:focus {
@@ -217,6 +219,8 @@ img {
   align-items: center;
   margin-right: 10px;
   fill: #757575;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*=============FOOTER============= */
 .footer {
@@ -357,8 +361,7 @@ img {
   min-height: 50px;
   cursor: pointer;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -528,7 +531,7 @@ img {
   border-radius: 50%;
   background-color: #ffffff;
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-icon {
   fill: var(--accent-fill);
@@ -577,7 +580,7 @@ img {
   align-items: center;
   justify-content: center;
 
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icon {
   display: flex;
@@ -635,6 +638,10 @@ img {
   border-radius: 4px;
   padding: 6px 22px;
   color: var(--title-text-color-black);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-filter-btn:hover,
 .portfolio-filter-btn:focus {
@@ -664,6 +671,8 @@ img {
   text-decoration: none;
   color: inherit;
   display: block;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-project-link:hover .portfolio-project-overlay-container {
   opacity: 1;
@@ -744,6 +753,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
